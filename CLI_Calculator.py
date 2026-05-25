@@ -97,6 +97,7 @@ def conversion_operator():
 
 def main():
     print("\n========== Smart CLI Calculator ==========")
+    print("\n=== CREATED BY SAMEER ACHARA ===")
     print("1. Basic Arithmetic (+, -, *, /)")
     print("2. Scientific Functions (sin, cos, log, sqrt, power)")
     print("3. Unit Conversion (cm<->inch, kg<->lb, Celsius<->Fahrenheit)")
