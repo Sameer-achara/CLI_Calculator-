@@ -24,11 +24,11 @@ def trigo_operation():
         print(value)
     elif(userinput == 'cos'):
         angle=float(input("Enter the Angle:"))
-        value=math.cos(math.radius(angle))
+        value=math.cos(math.radians(angle))
         print(value)
     elif(userinput == 'tan'):
         angle=float(input("Enter the Angle:"))
-        value=math.tan(math.radius(angle))
+        value=math.tan(math.radians(angle))
         print(value)
     elif(userinput == 'log'):
         x=int(input("Enter the Value:"))
@@ -84,11 +84,11 @@ def conversion_operator():
          unit=input("Enter the unit Which You want(c/f): ").lower()
          if(unit == 'c'):
           value=float(input("enter the value in Fahrenheit:"))
-          val=value/2.20462
+          val=(value-32)*5/9
           print("The value of Temp in Celcius is:",val)
          elif(unit == 'f'):
           value=float(input("enter the value in Celcius:"))
-          val=value*2.20462
+          val=(value*9/5)+32
           print("The value of Temp in Fahrenheit is:",val)
          else:
           print("Invalid Unit!")
@@ -97,7 +97,7 @@ def conversion_operator():
 
 def main():
     print("\n========== Smart CLI Calculator ==========")
-    print("\n=== CREATED BY SAMEER ACHARA ===")
+    print("\n========== CREATED BY SAMEER ACHARA ======\n")
     print("1. Basic Arithmetic (+, -, *, /)")
     print("2. Scientific Functions (sin, cos, log, sqrt, power)")
     print("3. Unit Conversion (cm<->inch, kg<->lb, Celsius<->Fahrenheit)")
